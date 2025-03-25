@@ -1,0 +1,2 @@
+[console_scripts]
+tree-cli = rptree.tree:main

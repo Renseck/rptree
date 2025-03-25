@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rptree
+Version: 0.2.0
+Summary: A python package to create project tree structures
+Home-page: https://github.com/Renseck/rp_tree
+Author: Rens van Eck
+Author-email: rensvaneck@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE

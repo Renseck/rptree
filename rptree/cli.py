@@ -20,6 +20,14 @@ def parse_cli_args():
         default = ".",
         help = "Generate a full directory tree starting at ROOT_DIR"
     )
+    parser.add_argument(
+        "-o",
+        "--output-file",
+        metavar = "OUTPUT_FILE",
+        nargs = "?",
+        default = sys.stdout,
+        help = "Generate a full directory tree and save it to a file"
+    )
     
     return parser.parse_args()
 
@@ -33,5 +41,5 @@ def main():
         print("The specified root does not exist")
         sys.exit()
     
-    tree = DirectoryTree(root_dir)
+    tree = DirectoryTree(root_dir, output_file = args.output_file)
     tree.generate()
